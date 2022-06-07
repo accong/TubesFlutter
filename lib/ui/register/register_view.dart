@@ -6,8 +6,7 @@ import 'package:tripkuy/ui/home/home.dart';
 import '../component.dart';
 
 class Register extends StatelessWidget {
-  
-  Register({ Key? key }) : super(key: key);
+  Register({Key? key}) : super(key: key);
 
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
@@ -16,9 +15,10 @@ class Register extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
 
-  onRegister(){
-    if(formKey.currentState!.validate()){
-      CoreFunction.showToast("Berhasil Regis", backgroundColor: ColorPalette.white);
+  onRegister() {
+    if (formKey.currentState!.validate()) {
+      CoreFunction.showToast("Berhasil Regis",
+          backgroundColor: ColorPalette.white);
       // routePush(const HomeView(), RouterType.material);
     } else {
       CoreFunction.showToast("Uknow Action");
@@ -37,18 +37,18 @@ class Register extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Component.textBold(
-                  "Register",
-                  fontSize: 50,
-                  colors: ColorPalette.white
+                Component.textBold("Register",
+                    fontSize: 50, colors: ColorPalette.white),
+                SizedBox(
+                  height: SizeConfig.blockSizeVertical * 10,
                 ),
-                SizedBox(height: SizeConfig.blockSizeVertical * 10,),
                 TextFormField(
                   keyboardType: TextInputType.text,
                   textInputAction: TextInputAction.next,
                   controller: usernameController,
                   style: const TextStyle(fontSize: 14, color: Colors.white),
-                  decoration: Component.decorationNoBorder("Username", iconPrefix: Icons.email),
+                  decoration: Component.decorationNoBorder("Username",
+                      iconPrefix: Icons.email),
                   validator: (value) {
                     if (value!.isEmpty) {
                       return 'masukkan username';
@@ -59,13 +59,17 @@ class Register extends StatelessWidget {
                     return null;
                   },
                 ),
-                const SizedBox(height: 20,),
+                const SizedBox(
+                  height: 20,
+                ),
                 TextFormField(
+                  obscureText: true,
                   keyboardType: TextInputType.text,
                   textInputAction: TextInputAction.done,
                   controller: passwordController,
                   style: const TextStyle(fontSize: 14, color: Colors.white),
-                  decoration: Component.decorationNoBorder("Password", iconPrefix: Icons.lock),
+                  decoration: Component.decorationNoBorder("Password",
+                      iconPrefix: Icons.lock),
                   validator: (value) {
                     if (value!.isEmpty) {
                       return 'masukkan password';
@@ -76,13 +80,16 @@ class Register extends StatelessWidget {
                     return null;
                   },
                 ),
-                const SizedBox(height: 20,),
+                const SizedBox(
+                  height: 20,
+                ),
                 TextFormField(
                   keyboardType: TextInputType.text,
                   textInputAction: TextInputAction.next,
                   controller: emailController,
                   style: const TextStyle(fontSize: 14, color: Colors.white),
-                  decoration: Component.decorationNoBorder("Email", iconPrefix: Icons.email),
+                  decoration: Component.decorationNoBorder("Email",
+                      iconPrefix: Icons.email),
                   validator: (value) {
                     if (value!.isEmpty) {
                       return 'masukkan Email';
@@ -93,13 +100,16 @@ class Register extends StatelessWidget {
                     return null;
                   },
                 ),
-                const SizedBox(height: 20,),
+                const SizedBox(
+                  height: 20,
+                ),
                 TextFormField(
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.done,
                   controller: phoneController,
                   style: const TextStyle(fontSize: 14, color: Colors.white),
-                  decoration: Component.decorationNoBorder("Phone Number", iconPrefix: Icons.lock),
+                  decoration: Component.decorationNoBorder("Phone Number",
+                      iconPrefix: Icons.lock),
                   validator: (value) {
                     if (value!.isEmpty) {
                       return 'masukkan nomor telepon';
@@ -110,10 +120,14 @@ class Register extends StatelessWidget {
                     return null;
                   },
                 ),
-                const SizedBox(height: 20,),
-                Component.button(label: "Register", onPressed: (){
-                  onRegister();
-                })
+                const SizedBox(
+                  height: 20,
+                ),
+                Component.button(
+                    label: "Register",
+                    onPressed: () {
+                      onRegister();
+                    })
               ],
             ),
           ),

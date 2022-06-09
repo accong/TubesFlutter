@@ -48,7 +48,7 @@ class Register extends StatelessWidget {
                   controller: usernameController,
                   style: const TextStyle(fontSize: 14, color: Colors.white),
                   decoration: Component.decorationNoBorder("Username",
-                      iconPrefix: Icons.email),
+                      iconPrefix: Icons.account_circle_outlined),
                   validator: (value) {
                     if (value!.isEmpty) {
                       return 'masukkan username';
@@ -109,7 +109,7 @@ class Register extends StatelessWidget {
                   controller: phoneController,
                   style: const TextStyle(fontSize: 14, color: Colors.white),
                   decoration: Component.decorationNoBorder("Phone Number",
-                      iconPrefix: Icons.lock),
+                      iconPrefix: Icons.local_phone),
                   validator: (value) {
                     if (value!.isEmpty) {
                       return 'masukkan nomor telepon';

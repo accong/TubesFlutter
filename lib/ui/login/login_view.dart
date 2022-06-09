@@ -35,8 +35,8 @@ class LoginView extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Component.textBold("Login Admin",
-                  fontSize: 50, colors: ColorPalette.white),
+              Component.textBold("Log in to TripKUY",
+                  fontSize: 40, colors: ColorPalette.white),
               SizedBox(
                 height: SizeConfig.blockSizeVertical * 10,
               ),

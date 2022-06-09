@@ -21,7 +21,7 @@ class LandingView extends StatelessWidget {
             SizedBox(
               height: SizeConfig.blockSizeVertical * 20,
             ),
-            Component.textBold("Welcome TO TRIPKUY",
+            Component.textBold("Welcome To TRIPKUY",
                 fontSize: 50, colors: ColorPalette.white),
             SizedBox(
               height: SizeConfig.blockSizeVertical * 20,

@@ -62,6 +62,12 @@ class Dashboard extends StatelessWidget {
               icon: Icon(Icons.group_outlined, color: ColorPalette.grey),
               label: "Data Tourguide",
             ),
+            BottomNavigationBarItem(
+              activeIcon: Icon(Icons.group_outlined, color: ColorPalette.white),
+              icon:
+                  Icon(Icons.account_circle_outlined, color: ColorPalette.grey),
+              label: "Profile",
+            ),
           ],
         );
       },

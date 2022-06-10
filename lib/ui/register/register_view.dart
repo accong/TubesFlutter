@@ -17,11 +17,11 @@ class Register extends StatelessWidget {
 
   onRegister() {
     if (formKey.currentState!.validate()) {
-      CoreFunction.showToast("Berhasil Regis",
+      CoreFunction.showToast("Berhasil Regist",
           backgroundColor: ColorPalette.white);
       // routePush(const HomeView(), RouterType.material);
     } else {
-      CoreFunction.showToast("Uknow Action");
+      CoreFunction.showToast("Unknown Action");
     }
   }
 

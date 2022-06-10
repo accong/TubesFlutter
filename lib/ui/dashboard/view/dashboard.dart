@@ -4,6 +4,7 @@ import 'package:tripkuy/core/app/app.dart';
 import 'package:tripkuy/core/util/util.dart';
 import 'package:tripkuy/ui/dashboard/cubit/dashboard_cubit.dart';
 import 'package:tripkuy/ui/destination/destination_view.dart';
+import 'package:tripkuy/ui/profile/profile.dart';
 import 'package:tripkuy/ui/tourguide/tourguide.dart';
 
 class Dashboard extends StatelessWidget {

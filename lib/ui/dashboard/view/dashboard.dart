@@ -65,7 +65,7 @@ class Dashboard extends StatelessWidget {
             BottomNavigationBarItem(
               activeIcon: Icon(Icons.group_outlined, color: ColorPalette.white),
               icon:
-                  Icon(Icons.account_circle_outlined, color: ColorPalette.grey),
+                  Icon(Icons.account_circle_rounded, color: ColorPalette.grey),
               label: "Profile",
             ),
           ],
